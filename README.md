@@ -1,6 +1,6 @@
 Machine Learning Model in a Web Application Using the Flask Framework and the Python Language
 
-Classifier Model in Machine Learning "LR"
+Prediction Model in in Machine Learning (Logistic Regression)
 
 In this example, we have 2 page home.html (it containe the result of prediction when we put different values) and preview.html to see the dataset.
 We get the different data "4-text-value" from the "html Form" (post method)
