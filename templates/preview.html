@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OUAJDI HAJJI</title>
+</head>
+
+<!-- <body background="static/imgs/olive.jpg"> -->
+<body>    
+<center>
+   <div>
+      <h1> Modèle de Prédiction d’Apprentissage Automatique (Régression Logistique) </h1></br>
+      <h2> Classification des différentes espèces de fleurs d'Iris à partir de la taille d'une feuille  </h2> </br>
+      <a href="{{url_for('index')}}" > Back </a>
+   </div>
+ 
+     <div>
+       {{ df_view.to_html(classes="table striped",na_rep="-") | safe}}
+     </div>
+
+</center>
+</body>
+</html>

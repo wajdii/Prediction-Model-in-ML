@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OUAJDI HAJJI</title>
+   <!-- <style>
+      body {
+      background-image: url("olive.jpg"); 
+      }
+   </style> -->
+</head>
+
+<!-- <body background="static/imgs/olive.jpg">   -->
+<body>
+<center>
+ <div>
+   <h1> Modèle de Prédiction d’Apprentissage Automatique (Régression Logistique) </h1></br>
+   <h2> Classification des différentes espèces de fleurs d'Iris à partir de la taille d'une feuille  </h2> </br>
+   <a href="{{url_for('preview')}}" >View Dataset</a></br></br>
+
+   <form action="{{ url_for('analyze')}}" method="POST">    
+    <label>Sepal Length</label></br>
+    <input type="text" name="t01" placeholder="00.00"> </br>
+    <label>sepal width</label></br>
+    <input type="text" name="t02" placeholder="00.00"> </br> 
+    <label>petal length</label></br>
+    <input type="text" name="t03" placeholder="00.00"> </br> 
+    <label>petal width</label></br>
+    <input type="text" name="t04"  placeholder="00.00"> </br></br> 
+
+    <button type="submit">Predict</button>
+    <button type="reset">Reset</button>
+
+   </form>
+ </div>
+
+  </div>
+    <p>Sepal Length:  {{ pl }} </p>
+    <p>Sepal Width :  {{ sl }} </p>
+    <p>Petal Length:  {{ pw}}  </p>
+    <p>Petal Width :  {{ sw}}  </p></br>
+    <p>get data    :  {{ data }} and clean data :  {{ cdata }}</p>
+  <div>
+
+</div> 
+    <h4>Predicted result</h4> <h2> {{ prediction }} </h2> 
+      {% if prediction   == ['versicolor']  %}
+        <img src="static/imgs/iris_versicolor.jpg"  width="400px" height="400px" >
+      {% elif prediction == ['setosa']      %}
+        <img src="static/imgs/iris_setosa.jpg"      width="400px" height="400px" >
+      {% elif prediction == ['virginica']   %}
+         <img src="static/imgs/iris_virginica.jpg"  width="400px" height="400px" >
+      {% else  %}
+      {% endif %}
+<div>
+
+
+
+</center>
+</body>
+</html>

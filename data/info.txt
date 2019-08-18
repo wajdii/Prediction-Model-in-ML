@@ -1,0 +1,7 @@
++ ModelClassifier version not work : because all the version was used in training model into anaconda are not the same with the version using in my envi virtual
+====================================
++ ModelClassifier : (version of the model are the same version of our virual envirement)
+in test using
+versicolor
+setosa
+virginica
